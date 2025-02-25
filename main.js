@@ -1,12 +1,14 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
 
 const createWindow = () => {
-  const win = new BrowserWindow({
+  var win = new BrowserWindow({
     width: 800,
     height: 600
   })
 
-  win.loadFile('index.html')
+  //win.setMenuBarVisibility(false);
+
+  win.loadFile('C:/js_projects/my-app/frontend/index.html');
 }
 
 app.whenReady().then(() => {
